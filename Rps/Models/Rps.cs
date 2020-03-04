@@ -10,5 +10,21 @@ namespace Rps.Models
       P1Hand = player1;
       P2Hand = player2;
     }
+
+    public string WinnerCheck()
+    {
+      if (P1Hand == P2Hand)
+      {
+        return "draw";
+      }
+      else if (P1Hand == "rock" && P2Hand == "scissors")
+      {
+        return "player 1 wins";
+      }
+      else
+      {
+        return "player 2 wins";
+      }
+    }
   }
 }
