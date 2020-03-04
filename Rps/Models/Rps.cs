@@ -17,7 +17,7 @@ namespace Rps.Models
       {
         return "draw";
       }
-      else if (P1Hand == "rock" && P2Hand == "scissors")
+      else if (P1Hand == "rock" && P2Hand == "scissors" || P1Hand == "scissors" && P2Hand == "paper" || P1Hand == "paper" && P2Hand == "rock")
       {
         return "player 1 wins";
       }
